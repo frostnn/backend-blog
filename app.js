@@ -1,10 +1,10 @@
 const express = require('express');
 
 const app = express();
-
+const port = 8888;
 app.get('/', (request, response) => {
-  response.send('Hello world')
+  response.send('Hello world!')
 })
-app.listen(8888, () =>{
-  console.log('Express start port 8888')
+app.listen(port, () =>{
+  console.log(`Express start port ${port}`)
 })
