@@ -8,7 +8,7 @@ class AuthController {
     const user = users.find((users) => users.login === login && users.password === password );
   
     if(!user) {
-      
+      //res.status(401).json({ status: false, message: 'Incorrect user login or password!' })
     throw new HttpError('incorrect login or password', 401)
     }
     
